@@ -16,7 +16,7 @@ kinesis = boto3.client('kinesis', region_name='us-east-1')
 
 
 def get_data(criteria):
-    columns = ['address', 'beds', 'baths', 'area', 'price', 'currency', 'url', 'source']
+    columns = ['area', 'bath', 'beds', 'broker', 'category', 'price', 'url','currency', 'source', 'lat', 'lon']
     data = scrape_looper(1)
     
     data = data.sample(3)[columns] # we may have some criteria to filter our data on eg "address='adenta'"

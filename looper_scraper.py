@@ -29,7 +29,7 @@ def parse_pages(pages):
 
 
 def extract_listings(soups):
-    "Extract listings from list of beautiful soup objects"
+    "Extract listings from listof beautiful soup objects"
     
     data = []
 
